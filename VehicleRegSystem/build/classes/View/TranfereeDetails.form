@@ -81,27 +81,29 @@
                                   </Group>
                               </Group>
                               <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="addressTF" alignment="0" min="-2" pref="690" max="-2" attributes="0"/>
-                                  <Component id="nameTF" alignment="0" min="-2" pref="690" max="-2" attributes="0"/>
-                                  <Component id="nicTF" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
-                                  <Component id="emailTF" alignment="0" min="-2" pref="365" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="photouploadBtn" min="-2" pref="127" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jLabel12" min="-2" pref="161" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="NICuploadBtn1" min="-2" pref="127" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="jLabel10" min="-2" pref="161" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" alignment="1" attributes="0">
-                                          <Component id="NICuploadBtn" min="-2" pref="127" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="addressTF" alignment="0" min="-2" pref="690" max="-2" attributes="0"/>
+                                      <Component id="nameTF" alignment="0" min="-2" pref="690" max="-2" attributes="0"/>
+                                      <Component id="nicTF" alignment="0" min="-2" pref="208" max="-2" attributes="0"/>
+                                      <Component id="emailTF" alignment="0" min="-2" pref="365" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="NICuploadBtn1" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
+                                              <Component id="photouploadBtn" alignment="0" min="-2" pref="127" max="-2" attributes="0"/>
+                                          </Group>
                                           <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
-                                          <Component id="jLabel9" min="-2" pref="161" max="-2" attributes="0"/>
+                                          <Group type="103" groupAlignment="0" attributes="0">
+                                              <Component id="jLabel10" min="-2" max="-2" attributes="0"/>
+                                              <Component id="jLabel12" min="-2" pref="329" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
+                                  </Group>
+                                  <Group type="102" alignment="1" attributes="0">
+                                      <Component id="NICuploadBtn" min="-2" pref="127" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Component id="jLabel9" min="-2" pref="306" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="229" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                           </Group>
@@ -158,7 +160,7 @@
                       <Component id="photouploadBtn" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
                       <Component id="jLabel12" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="40" max="32767" attributes="0"/>
+                  <EmptySpace pref="36" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="nextBtn" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="backBtn" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -258,7 +260,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB"/>
+            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB (Accepted file type : PNG, JPEG)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
@@ -282,7 +284,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB"/>
+            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB (Accepted file type : PNG, JPEG)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="backBtn">
@@ -328,7 +330,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB"/>
+            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB (Accepted file type : PNG, JPEG)"/>
           </Properties>
         </Component>
       </SubComponents>
