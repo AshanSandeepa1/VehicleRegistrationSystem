@@ -36,7 +36,7 @@ public class PaymentPage extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jMonthChooser1 = new com.toedter.calendar.JMonthChooser();
         jYearChooser1 = new com.toedter.calendar.JYearChooser();
-        nextBtn = new javax.swing.JButton();
+        confirmBtn = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -71,10 +71,10 @@ public class PaymentPage extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         jLabel6.setText("Exp. Date");
 
-        nextBtn.setBackground(new java.awt.Color(204, 255, 255));
-        nextBtn.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
-        nextBtn.setText("Confirm");
-        nextBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        confirmBtn.setBackground(new java.awt.Color(204, 255, 255));
+        confirmBtn.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        confirmBtn.setText("Confirm");
+        confirmBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel7.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         jLabel7.setText("Service Charge");
@@ -133,12 +133,12 @@ public class PaymentPage extends javax.swing.JFrame {
                             .addComponent(cardNoTF, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(cvvTF, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(nextBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(confirmBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jYearChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addContainerGap(189, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,7 +175,7 @@ public class PaymentPage extends javax.swing.JFrame {
                     .addComponent(jMonthChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jYearChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
-                .addComponent(nextBtn)
+                .addComponent(confirmBtn)
                 .addContainerGap(48, Short.MAX_VALUE))
         );
 
@@ -234,6 +234,7 @@ public class PaymentPage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField cardNoTF;
+    private javax.swing.JButton confirmBtn;
     private javax.swing.JTextField cvvTF;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel3;
@@ -247,7 +248,6 @@ public class PaymentPage extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private com.toedter.calendar.JYearChooser jYearChooser1;
     private javax.swing.JLabel lateFeelbl;
-    private javax.swing.JButton nextBtn;
     private javax.swing.JLabel serviceChargelbl;
     private javax.swing.JLabel totallbl;
     private javax.swing.JLabel vaslbl;
