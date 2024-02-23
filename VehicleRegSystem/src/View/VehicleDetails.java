@@ -54,6 +54,7 @@ public class VehicleDetails extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         nextBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
+        electricRB = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -179,7 +180,7 @@ public class VehicleDetails extends javax.swing.JFrame {
         jLabel6.setText("Upload Vehicle Registration Certificate");
 
         jLabel7.setFont(new java.awt.Font("Georgia", 1, 14)); // NOI18N
-        jLabel7.setText("Upload Vehicle Revenue Licnense");
+        jLabel7.setText("Upload Vehicle Revenue License");
 
         regCertUploadBtn.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         regCertUploadBtn.setText("Upload");
@@ -198,10 +199,10 @@ public class VehicleDetails extends javax.swing.JFrame {
         });
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        jLabel8.setText("Maximum upload size 2MB");
+        jLabel8.setText("Maximum upload size 2MB (Accepted file type : PDF)");
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
-        jLabel9.setText("Maximum upload size 2MB");
+        jLabel9.setText("Maximum upload size 2MB (Accepted file type : PDF)");
 
         nextBtn.setBackground(new java.awt.Color(204, 255, 255));
         nextBtn.setFont(new java.awt.Font("Georgia", 1, 15)); // NOI18N
@@ -210,6 +211,16 @@ public class VehicleDetails extends javax.swing.JFrame {
         backBtn.setBackground(new java.awt.Color(204, 255, 255));
         backBtn.setFont(new java.awt.Font("Georgia", 1, 15)); // NOI18N
         backBtn.setText("Back");
+
+        electricRB.setBackground(new java.awt.Color(102, 153, 255));
+        buttonGroupFuel.add(electricRB);
+        electricRB.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
+        electricRB.setText("Electric");
+        electricRB.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                electricRBActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -231,8 +242,10 @@ public class VehicleDetails extends javax.swing.JFrame {
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addComponent(petrolRB)
                                         .addGap(34, 34, 34)
-                                        .addComponent(dieselRB)))
-                                .addGap(0, 0, Short.MAX_VALUE))
+                                        .addComponent(dieselRB)
+                                        .addGap(40, 40, 40)
+                                        .addComponent(electricRB)))
+                                .addGap(0, 431, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(carRB, javax.swing.GroupLayout.Alignment.LEADING)
@@ -312,7 +325,8 @@ public class VehicleDetails extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
                             .addComponent(petrolRB)
-                            .addComponent(dieselRB))
+                            .addComponent(dieselRB)
+                            .addComponent(electricRB))
                         .addGap(29, 29, 29)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -397,6 +411,10 @@ public class VehicleDetails extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_vehicleRevLicenseBtnActionPerformed
 
+    private void electricRBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_electricRBActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_electricRBActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -440,6 +458,7 @@ public class VehicleDetails extends javax.swing.JFrame {
     private javax.swing.JRadioButton carRB;
     private javax.swing.JRadioButton dieselRB;
     private javax.swing.JRadioButton dualpRB;
+    private javax.swing.JRadioButton electricRB;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

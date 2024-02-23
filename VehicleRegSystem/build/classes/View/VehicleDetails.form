@@ -67,9 +67,11 @@
                                           <Component id="petrolRB" min="-2" max="-2" attributes="0"/>
                                           <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                                           <Component id="dieselRB" min="-2" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                                          <Component id="electricRB" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                                  <EmptySpace min="0" pref="431" max="32767" attributes="0"/>
                               </Group>
                               <Group type="102" alignment="0" attributes="0">
                                   <Group type="103" groupAlignment="1" attributes="0">
@@ -175,6 +177,7 @@
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="petrolRB" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="dieselRB" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="electricRB" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="29" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
@@ -422,7 +425,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Georgia" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Upload Vehicle Revenue Licnense"/>
+            <Property name="text" type="java.lang.String" value="Upload Vehicle Revenue License"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="regCertUploadBtn">
@@ -452,7 +455,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB"/>
+            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB (Accepted file type : PDF)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
@@ -460,7 +463,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Times New Roman" size="12" style="3"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB"/>
+            <Property name="text" type="java.lang.String" value="Maximum upload size 2MB (Accepted file type : PDF)"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="nextBtn">
@@ -484,6 +487,23 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Back"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="electricRB">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="99" red="66" type="rgb"/>
+            </Property>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="buttonGroupFuel"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Georgia" size="12" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Electric"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="electricRBActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
