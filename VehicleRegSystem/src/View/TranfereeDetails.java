@@ -81,6 +81,11 @@ public class TranfereeDetails extends javax.swing.JFrame {
 
         NICuploadBtn.setFont(new java.awt.Font("Georgia", 1, 12)); // NOI18N
         NICuploadBtn.setText("Upload");
+        NICuploadBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NICuploadBtnActionPerformed(evt);
+            }
+        });
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 3, 12)); // NOI18N
         jLabel9.setText("Maximum upload size 2MB (Accepted file type : PNG, JPEG)");
@@ -223,6 +228,10 @@ public class TranfereeDetails extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void NICuploadBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NICuploadBtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NICuploadBtnActionPerformed
 
     /**
      * @param args the command line arguments
